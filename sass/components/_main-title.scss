@@ -1,14 +1,31 @@
 .main-title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--hero-collor);
+    color: #FFFFFF;
     margin-bottom: 30px;
 }
 
 .main-title-hero {
+    width: 100%;
+    padding: 0;
     text-align: center;
 }
+
+// .main-title {
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.36;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     color: var(--hero-collor);
+//     margin-bottom: 30px;
+// }
+// .main-title-hero {
+//     text-align: center;
+// }
+
