@@ -323,6 +323,26 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/tablet-hero-img.png);
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/hero/tablet-hero-img@2x.png);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/desktop-hero-img.png);
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/hero/desktop-hero-img@2x.png);
+  }
+}
+
 .benefits {
   padding-bottom: 60px;
 }
