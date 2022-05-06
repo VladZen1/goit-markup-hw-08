@@ -204,7 +204,7 @@ img {
     pointer-events: auto;
   }
   .mobile-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -215,6 +215,7 @@ img {
     visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
   }
   .mobile-menu__container {
     position: relative;
@@ -385,11 +386,6 @@ img {
   margin-bottom: 30px;
 }
 
-.spacing-between-cards {
-  margin-left: 8px;
-  margin-top: 8px;
-}
-
 .clients {
   display: flex;
   flex-wrap: wrap;
@@ -537,10 +533,18 @@ img {
   margin-right: auto;
 }
 
-.container-filter-btn .filter-btn.current-btn {
-  background: #188ce8;
-  color: #ffffff;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.filter {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-top: -15px;
+}
+
+.filter-item {
+  margin-left: 8px;
+  margin-top: 15px;
 }
 
 .filter-btn {
@@ -552,9 +556,10 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  background: #F5F4FA;
   border-radius: 4px;
   border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover, .filter-btn:focus {
@@ -563,13 +568,21 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.spacing-between-cards-portfolio {
-  margin-left: 30px;
-  margin-top: 30px;
+.container-filter-btn .filter-btn.current-btn {
+  background: #188ce8;
+  color: #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.portfolio-list {
-  flex-wrap: wrap;
+.list-item {
+  left: 215px;
+  top: 262px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .portfolio-cards-name {
@@ -599,7 +612,7 @@ img {
   letter-spacing: 0.03em;
   color: #ffffff;
   background: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px;
+  padding: 77px 24px;
   top: 0;
   left: 0;
   width: 100%;
@@ -614,21 +627,13 @@ img {
   transform: translateY(0%);
 }
 
-.list-item {
-  width: 370px;
-  height: 404px;
-  left: 215px;
-  top: 262px;
-  background: #ffffff;
-  box-sizing: border-box;
-}
-
 .list-item-h {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  margin-bottom: 4px;
 }
 
 .list-item-p {
@@ -636,27 +641,6 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-}
-
-.parent-indent {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: -8px;
-  margin-top: -8px;
-  margin-bottom: 50px;
-}
-
-.portfolio-cards-indent {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
-.cards-portfolio {
-  flex-basis: calc((100%-3 * 30) / 3);
 }
 
 .backdrop {
@@ -783,7 +767,7 @@ img {
 .modal-form-messange::placeholder {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
