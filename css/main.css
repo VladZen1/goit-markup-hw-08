@@ -681,8 +681,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #ffffff;
   border-radius: 4px;
   padding: 40px;
@@ -782,21 +782,24 @@ img {
 
 .modal-form-messange::placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 1.14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-checkbox-wrapper {
+  padding-top: 10px;
 }
 
 .modal-form-checkbox-label {
   display: flex;
   align-items: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
-  padding-left: 14px;
 }
 
 .modal-form-checkbox-label::before {
@@ -806,7 +809,7 @@ img {
   border: 2px solid #212121;
   cursor: pointer;
   content: "";
-  margin-right: 10px;
+  margin-right: 7px;
   border-radius: 2px;
 }
 
