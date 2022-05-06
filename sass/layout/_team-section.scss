@@ -31,6 +31,13 @@ margin-top: 30px;
         margin-bottom: 30px;
     }
 }
+@media screen and (min-width: 768px) {
+    .team-section__card:nth-last-child(-n+2) {
+        margin-bottom: 0;
+    }
+
+}
+
 // .team-section {
 //     background: #f5f4fa;
 // }

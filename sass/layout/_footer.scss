@@ -105,7 +105,24 @@
     margin-left: auto;
     margin-right: auto;
 }
+@media screen and (min-width: 768px) {
+   .footer-adress-tablet {
+    display: flex;
+    justify-content: center;
+   }
+   .footer-adress-list {
+    margin-right: 165px;
+   }
+    .footer-form__input {
+        max-width: 450px;
+    }
+    .footer-form__f{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+}
 // .logo-footer {
 //     font-family: "Raleway", sans-serif;
 //     font-weight: bold;

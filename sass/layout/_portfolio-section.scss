@@ -10,9 +10,7 @@
     margin-left: 8px;
     margin-top: 15px;
 }
-.spacing-between-cards {
-  
-}
+
 .filter-btn {
     padding: 6px 22px;
     font-family: inherit;
@@ -110,6 +108,40 @@
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
+@media screen and (min-width: 768px) {
+    .filter {
+        justify-content: center;
+        align-items: center;
+    }
+    .portfolio-cards-indent {
+        display: flex;
+        flex-wrap: wrap;
+        // align-items: center;
+        // justify-content: center;
+        margin-left: -30px;
+        margin-top: -30px;
+    }
+    .spacing-between-cards {
+        margin-left: 30px;
+        margin-top: 30px;
+        flex-basis: calc((100% - 60px) / 2);
+       
+    }
+    .overlay-portfolio {
+        padding: 49px 24px 77px;
+    }
+    .cards-portfolio-link {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .portfolio-cards-name {
+        flex-grow: 1;
+    }
+
+}
+
 // .spacing-between-cards {
 //     margin-left: 8px;
 //     margin-top: 8px;
