@@ -18,6 +18,12 @@
 .benefits__cards {
     padding-bottom: 30px;
 }
+@media screen and (max-width: 767px) {
+    .benefits__title {
+        text-align: center;
+    }
+
+}
 @media screen and (min-width: 768px) {
     .studio-cards-parent-indent {
         display: flex;
