@@ -58,6 +58,13 @@ img {
   padding-top: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -114,7 +121,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 24px;
 }
 
 .social-list__item:not(:last-child) {
@@ -133,6 +139,28 @@ img {
   height: 44px;
 }
 
+@media screen and (min-width: 1200px) {
+  .social-list__link {
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .social-list__link:hover, .social-list__link:focus {
+    background-color: var(--accent-color);
+  }
+  .social-list__icon {
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .social-list__link:hover .social-list__icon,
+  .social-list__link:focus .social-list__icon {
+    fill: #ffffff;
+  }
+  .footer-social-list-link:hover .social-list__icon,
+  .footer-social-list-link:focus .social-list__icon {
+    fill: #ffffff;
+  }
+}
+
 .main-title {
   font-weight: 900;
   font-size: 26px;
@@ -140,7 +168,7 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--hero-collor);
   margin-bottom: 30px;
 }
 
@@ -148,6 +176,13 @@ img {
   width: 100%;
   padding: 0;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .benefits__description {
@@ -166,11 +201,19 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .secondary-title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #000000;
 }
@@ -182,6 +225,14 @@ img {
 @media screen and (min-width: 768px) {
   .logo {
     margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 93px;
   }
 }
 
@@ -399,6 +450,26 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  .contact-header {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+  }
+  .contact-header__mail {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  .contact-header__mail-number {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
 .hero {
   padding: 118px 60px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/mobile-hero-img.png);
@@ -407,6 +478,7 @@ img {
   background-position: center;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -425,6 +497,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 118px 204px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/desktop-hero-img.png);
 }
@@ -432,6 +510,13 @@ img {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../img/hero/desktop-hero-img@2x.png);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    padding: 200px auto;
   }
 }
 
@@ -472,10 +557,51 @@ img {
     flex-basis: calc((100% - 60px) / 2);
     padding-bottom: 0;
   }
+  .benefits__icon {
+    border-radius: 4px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .studio-spacing-between-cards {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+  .benefits {
+    padding-bottom: 0px;
+  }
 }
 
 .skills {
   display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .skills {
+    display: block;
+  }
+  .skills__card {
+    flex-basis: calc((100%-3 * 30) / 3);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .skills__overlay {
+    position: relative;
+  }
+  .skills__overlay-p {
+    position: absolute;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+  }
 }
 
 .team-section {
@@ -489,7 +615,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
-  margin-top: 30px;
 }
 
 .team-section__position {
@@ -506,16 +631,38 @@ img {
   border: 1px solid #ccc;
   border-top: none;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
 }
 
 .team-section__card:not(:last-child) {
   margin-bottom: 30px;
 }
 
+.team-section__cards-name {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+
 @media screen and (min-width: 768px) {
   .team-section__card:nth-last-child(-n+2) {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-section__card:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .team-section__card-photo {
+    width: 100%;
+  }
+  .team-section__card {
+    flex-basis: calc((100%-4 * 30) / 4);
+  }
+  .team-section__cards-name {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
@@ -566,6 +713,16 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .clients {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .clients-link {
+    width: 170px;
+  }
+}
+
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -602,6 +759,11 @@ img {
 
 .contact-footer {
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 8px;
+}
+
+.contact-footer-tel {
+  margin-bottom: 0;
 }
 
 .footer-post {
@@ -693,12 +855,61 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .logo-footer {
+    font-size: 26px;
+    line-height: 1.19;
+    text-align: start;
+  }
+  .element-style {
+    align-items: start;
+  }
+  .link-footer {
+    margin-bottom: 9px;
+  }
+  .contact-footer {
+    margin-bottom: 9px;
+  }
+  .contact-footer-tel {
+    margin-bottom: 0;
+  }
+  .footer-adress {
+    display: flex;
+  }
+  .footer-adress-list {
+    min-width: 231px;
+    margin-right: 70px;
+  }
+  .footer-list {
+    min-width: 206px;
+    min-height: 80px;
+  }
+  .footer-post {
+    text-align: start;
+  }
+  .footer-form {
+    margin-left: 93px;
+    width: 570px;
+    height: 86px;
+  }
+  .footer-form__p {
+    text-align: start;
+  }
+  .footer-form__f {
+    flex-direction: initial;
+  }
+  .footer-form__input {
+    max-width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+}
+
 .filter {
   display: flex;
   justify-content: start;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   flex-wrap: wrap;
-  margin-left: -8px;
   margin-top: -15px;
 }
 
@@ -735,6 +946,7 @@ img {
 }
 
 .list-item {
+  max-width: 450px;
   left: 215px;
   top: 262px;
   background: #ffffff;
@@ -808,6 +1020,9 @@ img {
     justify-content: center;
     align-items: center;
   }
+  .list-item {
+    max-width: 354px;
+  }
   .portfolio-cards-indent {
     display: flex;
     flex-wrap: wrap;
@@ -829,6 +1044,26 @@ img {
   }
   .portfolio-cards-name {
     flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
+  .spacing-between-cards {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  .list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .overlay-portfolio {
+    padding: 63px 24px;
+  }
+  .list-item {
+    max-width: 370px;
   }
 }
 
@@ -861,6 +1096,13 @@ img {
   padding: 40px;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+
 .modal-close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -888,7 +1130,7 @@ img {
 .modal-title {
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -1005,5 +1247,23 @@ img {
 
 .modal-form-checkbox-link {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    line-height: 1.15;
+  }
+  .modal-form-messange::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .modal-form-checkbox-label {
+    font-size: 14px;
+    line-height: 1.7;
+    padding-left: 14px;
+  }
+  .modal-form-checkbox-label::before {
+    margin-right: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

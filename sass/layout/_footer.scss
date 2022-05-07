@@ -35,8 +35,11 @@
 
 .contact-footer {
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 8px;
 }
-
+.contact-footer-tel {
+    margin-bottom: 0;
+}
 .footer-post {
     font-weight: bold;
     font-size: 14px;
@@ -63,6 +66,7 @@
         background-color: var(--accent-color);
     }
 }
+
 .footer-list {
     margin-bottom: 60px;
 }
@@ -105,6 +109,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 @media screen and (min-width: 768px) {
    .footer-adress-tablet {
     display: flex;
@@ -123,130 +128,56 @@
     }
 
 }
-// .logo-footer {
-//     font-family: "Raleway", sans-serif;
-//     font-weight: bold;
-//     font-size: 26px;
-//     line-height: 1.19;
-//     letter-spacing: 0.03em;
-//     color: #ffffff;
-//     display: block;
-//     margin-bottom: 20px;
-// }
 
-// .footer {
-//     background: #2f303a;
-//     padding: 60px 0;
-// }
-// .link-footer {
-//     font-size: 14px;
-//     line-height: 1.71;
-//     letter-spacing: 0.03em;
-//     color: #ffffff;
-//     margin-bottom: 9px;
-// }
+@media screen and (min-width: 1200px) {
+    .logo-footer {
+        font-size: 26px;
+        line-height: 1.19;
+        text-align: start;
+    }
+    .element-style{
+        align-items: start;
+    }
+    .link-footer {
+        margin-bottom: 9px;
+    }
+    .contact-footer {
+        margin-bottom: 9px;
+    }
+    .contact-footer-tel {
+        margin-bottom: 0;
+    }
+    .footer-adress {
+        display: flex;
+    }
+    .footer-adress-list {
+        min-width: 231px;
+        margin-right: 70px;
+    }
+    .footer-list {
+        min-width: 206px;
+        min-height: 80px;
+    }
+    .footer-post {
+        text-align: start;
 
-// .contact-footer {
-//     font-size: 14px;
-//     line-height: 1.71;
-//     letter-spacing: 0.03em;
-//     color: rgba(255, 255, 255, 0.6);
-//     margin-bottom: 9px;
-// }
+    }
 
-// .contact-footer-tel {
-//     margin-bottom: 0;
-// }
+    .footer-form {
+    margin-left: 93px;
+    width: 570px;
+    height: 86px;
+    }
+    .footer-form__p {
+        text-align: start;
+    }
+    .footer-form__f {
+        flex-direction: initial;
+    }
+    .footer-form__input {
+        max-width: 358px;
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
 
-// .footer-adress {
-//     display: flex;
-// }
-// .element-style {
-//     font-style: normal;
-//     display: flex;
-//     flex-direction: column;
-// }
-
-// .footer-adress-list {
-//     min-width: 231px;
-//     margin-right: 70px;
-// }
-
-// .footer-list {
-//     min-width: 206px;
-//     min-height: 80px;
-// }
-
-// .footer-post {
-//     font-weight: bold;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     margin-bottom: 20px;
-//     color: #ffffff;
-// }
-
-// .footer-social-list-link {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 44px;
-//     height: 44px;
-//     border-radius: 50%;
-//     background-color: #ffffff10;
-//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//     &:hover,
-//     &:focus {
-//         background-color: var(--accent-color);
-//     }
-// }
-
-// .footer-form {
-//     margin-left: 93px;
-//     width: 570px;
-//     height: 86px;
-// }
-
-// .footer-form__p {
-//     font-weight: bold;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     color: #ffffff;
-//     margin-bottom: 20px;
-// }
-
-// .footer-form__input {
-//     border: 1px solid rgba(255, 255, 255, 0.3);
-//     border-radius: 4px;
-//     width: 100%;
-//     height: 50px;
-//     background-color: transparent;
-//     padding-left: 16px;
-//     color: #ffffff;
-
-//     &::placeholder {
-//         font-weight: 400;
-//         font-size: 16px;
-//         line-height: 1.25;
-//         color: rgba(255, 255, 255, 0.6);
-//     }
-// }
-
-// .footer-form__btn {
-//     margin-left: 12px;
-//     display: flex;
-//     padding: 8px 26px;
-//     justify-content: space-between;
-//     align-items: center;
-//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     cursor: pointer;
-// }
-
-// .footer-form__f {
-//     display: flex;
-//     align-items: center;
-// }
+}
